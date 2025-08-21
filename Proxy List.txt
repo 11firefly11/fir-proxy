@@ -862,3 +862,5 @@ socks5://107.172.94.40:1100
 socks5://23.95.216.158:1100
 socks5://107.175.127.3:1100
 socks5://47.237.2.69:1100
+
+http://mp9f95qlr5w6g9:y1elpx1zic9qvx@p.proxik.cloud:8080
