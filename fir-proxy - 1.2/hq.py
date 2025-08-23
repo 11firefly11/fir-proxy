@@ -63,7 +63,16 @@ SOURCES = [
     {"name": "monosans/proxy-list", "url": "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies.json",
      "parser": "json-list", "protocol": "socks5"},
     {"name": "fate0/proxylist", "url": "https://raw.githubusercontent.com/fate0/proxylist/master/proxy.list",
-     "parser": "json", "protocol": "http"}  # fate0/proxylist 大部分是http
+     "parser": "json", "protocol": "http"},  # fate0/proxylist 大部分是http
+    {"name": "proxik/http",
+     "url": "https://proxik.cloud/proxy_list?type=http", "parser": "text",
+     "protocol": "http"},
+    {"name": "proxik/socks5",
+         "url": "https://proxik.cloud/proxy_list?type=socks5", "parser": "text",
+         "protocol": "socks5"},
+    {"name": "proxik/socks4",
+         "url": "https://proxik.cloud/proxy_list?type=socks4", "parser": "text",
+         "protocol": "socks4"}
 ]
 
 
@@ -159,4 +168,5 @@ def fetch_and_save_proxies():
 
 
 if __name__ == "__main__":
+
     fetch_and_save_proxies()
